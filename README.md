@@ -104,16 +104,20 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 | #  | Topic |
 | --- | --- |
 |Question | How can we represent the system in an **architecture diagram**, which gives information both about the Docker containers, the communication protocols and the commands? |
-| | *Insert your diagram here...* |
+| | *see the diagram below* |
 |Question | Who is going to **send UDP datagrams** and **when**? |
-| | *Enter your response here...* |
+| | Musician's going to send UDP datagrams for every seconds |
 |Question | Who is going to **listen for UDP datagrams** and what should happen when a datagram is received? |
-| | *Enter your response here...* |
+| | Auditor's going to listen to the UDP datagrams, add the received datagrams to an array and check if the Musician is still alive after 5 seconds |
 |Question | What **payload** should we put in the UDP datagrams? |
-| | *Enter your response here...* |
+| | The instrument's sound and the IP source address |
 |Question | What **data structures** do we need in the UDP sender and receiver? When will we update these data structures? When will we query these data structures? |
-| | *Enter your response here...* |
+| | UDP sender : a string containing the instrument's sound |
+| | UDP receiver : a (JS)Map with the uuid as key and a pair with the instrument's type and the `date()` received |
+| | We will update the data structures everytime the Auditor receive a sound and when it finds an inactive musician (>5sec inactivity) |
+| | We will query the data structures when we get the JSON oject of the playing musicians and when the Auditor will delete the inactive ones |
 
+![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/david-pellissier/Teaching-HEIGVD-RES-2020-Labo-Orchestra/tree/master/resources/diagram.iuml)
 
 ## Task 2: implement a "musician" Node.js application
 

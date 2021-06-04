@@ -1,0 +1,24 @@
+```puml
+
+@startuml
+
+class Musician {
+    + produceSound()
+}
+
+class Auditor {
+    + getSound()
+    + createJSONObject()
+}
+
+class TCP
+
+Musician --> Auditor : "send sound"
+
+Auditor --> TCP : "JSON object"
+
+TCP --> Auditor : "request JSON"
+
+@enduml
+
+```
