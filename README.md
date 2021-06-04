@@ -117,30 +117,7 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 | | We will update the data structures everytime the Auditor receive a sound and when it finds an inactive musician (>5sec inactivity) |
 | | We will query the data structures when we get the JSON oject of the playing musicians and when the Auditor will delete the inactive ones |
 
-```puml
-
-@startuml
-
-class Musician {
-    + produceSound()
-}
-
-class Auditor {
-    + getSound()
-    + createJSONObject()
-}
-
-class TCP
-
-Musician --> Auditor : "send sound"
-
-Auditor --> TCP : "JSON object"
-
-TCP --> Auditor : "request JSON" 
-
-@enduml
-
-```
+![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/david-pellissier/Teaching-HEIGVD-RES-2020-Labo-Orchestra/tree/master/resources/diagram.iuml)
 
 ## Task 2: implement a "musician" Node.js application
 
