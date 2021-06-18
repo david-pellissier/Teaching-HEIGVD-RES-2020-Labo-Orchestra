@@ -124,21 +124,21 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 | #  | Topic |
 | ---  | --- |
 |Question | In a JavaScript program, if we have an object, how can we **serialize it in JSON**? |
-| | *Enter your response here...*  |
+| | with `JSON.stringify(<object>)`  |
 |Question | What is **npm**?  |
-| | *Enter your response here...*  |
+| | From what I knew in the beginning of Node.js (before it was in its 1ˢᵗ version), the acronym stood for Not a Package Manager. But as of today, we can safely assume that it stands for Node Package Manager. And as it implies, it's a package manager for… well, Node.js.  |
 |Question | What is the `npm install` command and what is the purpose of the `--save` flag?  |
-| | *Enter your response here...*  |
+| | from ![here](https://stackoverflow.com/questions/36022926/what-do-the-save-flags-do-with-npm-install), is says that it installs the package and updates the dependencies in the `package.json`. Apparently, this is not necessary as it is now the default option.  |
 |Question | How can we use the `https://www.npmjs.com/` web site?  |
-| | *Enter your response here...*  |
+| | Using the search field to look for a package that we might want to use ? Not really sure what's the question, but the website says that it's npm, Inc., the company behind "Node package manager" (and 2 other things) and they do love open source. It also offers the documentation for `npm`. |
 |Question | In JavaScript, how can we **generate a UUID** compliant with RFC4122? |
-| | *Enter your response here...*  |
+| | Simply using the package soberly called `uuid` that says "For the creation of RFC4122 UUIDs". |
 |Question | In Node.js, how can we execute a function on a **periodic** basis? |
-| | *Enter your response here...*  |
+| | with `setInterval(a_function(){}, time_in_ms);`.  |
 |Question | In Node.js, how can we **emit UDP datagrams**? |
-| | *Enter your response here...*  |
+| | using the `dgram` node API. In the ![example](https://nodejs.fandom.com/wiki/UDP/Datagrams) given in the `send` section, we can see that we must first create a socket, then we can send the message. |
 |Question | In Node.js, how can we **access the command line arguments**? |
-| | *Enter your response here...*  |
+| | with `procress.argv` within the JS script. |
 
 
 ## Task 3: package the "musician" app in a Docker image
