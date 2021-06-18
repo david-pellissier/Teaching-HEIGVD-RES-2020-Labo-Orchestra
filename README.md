@@ -110,9 +110,9 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 |Question | Who is going to **listen for UDP datagrams** and what should happen when a datagram is received? |
 | | Auditor's going to listen to the UDP datagrams, add the received datagrams to an array and check if the Musician is still alive after 5 seconds |
 |Question | What **payload** should we put in the UDP datagrams? |
-| | The instrument's sound and the IP source address |
+| | The musician's sound and UUID |
 |Question | What **data structures** do we need in the UDP sender and receiver? When will we update these data structures? When will we query these data structures? |
-| | UDP sender : a string containing the instrument's sound |
+| | UDP sender : a stringified JSON containing the musician's sound and UUID |
 | | UDP receiver : a (JS)Map with the uuid as key and a pair with the instrument's type and the `date()` received |
 | | We will update the data structures everytime the Auditor receive a sound and when it finds an inactive musician (>5sec inactivity) |
 | | We will query the data structures when we get the JSON oject of the playing musicians and when the Auditor will delete the inactive ones |
