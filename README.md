@@ -128,7 +128,7 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 |Question | What is **npm**?  |
 | | From what I knew in the beginning of Node.js (before it was in its 1ˢᵗ version), the acronym stood for Not a Package Manager. But as of today, we can safely assume that it stands for Node Package Manager. And as it implies, it's a package manager for… well, Node.js.  |
 |Question | What is the `npm install` command and what is the purpose of the `--save` flag?  |
-| | from ![here](https://stackoverflow.com/questions/36022926/what-do-the-save-flags-do-with-npm-install), is says that it installs the package and updates the dependencies in the `package.json`. Apparently, this is not necessary as it is now the default option.  |
+| | from [here](https://stackoverflow.com/questions/36022926/what-do-the-save-flags-do-with-npm-install), is says that it installs the package and updates the dependencies in the `package.json`. Apparently, this is not necessary as it is now the default option.  |
 |Question | How can we use the `https://www.npmjs.com/` web site?  |
 | | Using the search field to look for a package that we might want to use ? Not really sure what's the question, but the website says that it's npm, Inc., the company behind "Node package manager" (and 2 other things) and they do love open source. It also offers the documentation for `npm`. |
 |Question | In JavaScript, how can we **generate a UUID** compliant with RFC4122? |
@@ -136,7 +136,7 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 |Question | In Node.js, how can we execute a function on a **periodic** basis? |
 | | with `setInterval(a_function(){}, time_in_ms);`.  |
 |Question | In Node.js, how can we **emit UDP datagrams**? |
-| | using the `dgram` node API. In the ![example](https://nodejs.fandom.com/wiki/UDP/Datagrams) given in the `send` section, we can see that we must first create a socket, then we can send the message. |
+| | using the `dgram` node API. In the [example](https://nodejs.fandom.com/wiki/UDP/Datagrams) given in the `send` section, we can see that we must first create a socket, then we can send the message. |
 |Question | In Node.js, how can we **access the command line arguments**? |
 | | with `procress.argv` within the JS script. |
 
@@ -146,17 +146,17 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 | #  | Topic |
 | ---  | --- |
 |Question | How do we **define and build our own Docker image**?|
-| | *Enter your response here...*  |
+| | using `docker build . -t <image_tag>` where the the `Dockerfile` is located.  |
 |Question | How can we use the `ENTRYPOINT` statement in our Dockerfile?  |
-| | *Enter your response here...*  |
+| | In the same way of the `CMD` statement. The difference between those 2 is that one can not override the `ENTRYPOINT` instruction by adding command-line parameters to the `docker run` command.  |
 |Question | After building our Docker image, how do we use it to **run containers**?  |
-| | *Enter your response here...*  |
+| | using `docker run [OPTIONS] <docker_image>`  |
 |Question | How do we get the list of all **running containers**?  |
-| | *Enter your response here...*  |
+| | using `docker ps`  |
 |Question | How do we **stop/kill** one running container?  |
-| | *Enter your response here...*  |
+| | using `docker kill <container_name>`  |
 |Question | How can we check that our running containers are effectively sending UDP datagrams?  |
-| | *Enter your response here...*  |
+| | With an external tool such as Wireshark to check the network activity.  |
 
 
 ## Task 4: implement an "auditor" Node.js application
