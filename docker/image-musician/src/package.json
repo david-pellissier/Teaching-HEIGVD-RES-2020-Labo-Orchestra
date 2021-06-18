@@ -1,0 +1,26 @@
+{
+  "name": "musician-app",
+  "version": "1.0.0",
+  "description": "An UDP muscian playing 5 kinds of instruments.",
+  "author": {
+    "name": "Soulaymane Lamrani",
+    "email": "soulaymane.lamrani@heig-vd.ch"
+  },
+  "contributors": [
+    {
+      "name": "David Pellissier",
+      "email": "david.pellissier@heig-vd.ch"
+    }
+  ],
+  "main": "app.js",
+  "scripts": {
+    "piano": "node app.js piano",
+    "trumpet": "node app.js trumpet",
+    "flute": "node app.js flute",
+    "violin": "node app.js violin",
+    "drum": "node app.js drum"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}

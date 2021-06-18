@@ -146,7 +146,7 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 | #  | Topic |
 | ---  | --- |
 |Question | How do we **define and build our own Docker image**?|
-| | using `docker build . -t <image_tag>` where the the `Dockerfile` is located.  |
+| | using `docker build -t <image_tag> .` where the the `Dockerfile` is located.  |
 |Question | How can we use the `ENTRYPOINT` statement in our Dockerfile?  |
 | | In the same way of the `CMD` statement. The difference between those 2 is that one can not override the `ENTRYPOINT` instruction by adding command-line parameters to the `docker run` command.  |
 |Question | After building our Docker image, how do we use it to **run containers**?  |
