@@ -3,21 +3,25 @@
 @startuml
 
 class Musician {
-    + produceSound()
+    + produceSound(UDP, Multicast)
 }
 
 class Auditor {
+    + TCP_Server
     + getSound()
     + createJSONObject()
+    + sendOrchstra()
 }
 
-class TCP
+class TCP_Client {
+    + getOrchestra()
+}
 
 Musician --> Auditor : "send sound"
 
-Auditor --> TCP : "JSON object"
+Auditor --> TCP_Client : "JSON object"
 
-TCP --> Auditor : "request JSON"
+TCP_Client --> Auditor : "request JSON"
 
 @enduml
 
