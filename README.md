@@ -164,15 +164,15 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 | #  | Topic |
 | ---  | ---  |
 |Question | With Node.js, how can we listen for UDP datagrams in a multicast group? |
-| | *Enter your response here...*  |
+| | Almost in the same way as the emitter but we have to bind the client to a specified port and address. |
 |Question | How can we use the `Map` built-in object introduced in ECMAScript 6 to implement a **dictionary**?  |
-| | *Enter your response here...* |
+| | The `Map`object already holds key-value pairs, so we just have to save the musicians' uuid with an array containing the other informations such as activeSince, etc. |
 |Question | How can we use the `Moment.js` npm module to help us with **date manipulations** and formatting?  |
-| | *Enter your response here...* |
+| | By using its differents mothods available such as add, subsctract. There is a [manipulation](https://momentjs.com/docs/#/manipulating/https://momentjs.com/docs/#/manipulating/) section. There is also a format method for… formatting. |
 |Question | When and how do we **get rid of inactive players**?  |
-| | *Enter your response here...* |
+| | We lookup every seconds the `Map` and if there is a player that's been `activeSince` more than 5 seconds, we delete it from the said `Map`. |
 |Question | How do I implement a **simple TCP server** in Node.js?  |
-| | *Enter your response here...* |
+| | By using the `net` node built-in API. There are plenty of examples of basic TCP server available throughout the Web. |
 
 
 ## Task 5: package the "auditor" app in a Docker image

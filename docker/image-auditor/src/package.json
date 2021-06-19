@@ -1,0 +1,19 @@
+{
+  "name": "auditor-app",
+  "version": "1.0.0",
+  "description": "A TCP auditor listening to an orchestra of musician",
+  "author": {
+    "name": "Soulaymane Lamrani",
+    "email": "soulaymane.lamrani@heig-vd.ch"
+  },
+  "contributors": [
+    {
+      "name": "David Pellissier",
+      "email": "david.pellissier@heig-vd.ch"
+    }
+  ],
+  "main": "app.js",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
