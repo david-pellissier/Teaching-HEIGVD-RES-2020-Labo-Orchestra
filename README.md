@@ -177,11 +177,38 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 
 ## Task 5: package the "auditor" app in a Docker image
 
-| #  | Topic |
-| ---  | --- |
-|Question | How do we validate that the whole system works, once we have built our Docker image? |
-| | *Enter your response here...* |
-
+<table>
+    <tr>
+        <th>#</th>
+        <th>Topic</th>
+    </tr>
+    <tr>
+        <td>Question</td>
+        <td>
+            How do we validate that the whole system works, once we have built our Docker image?
+        </td>
+    </tr>
+    <tr>
+        <td>
+        </td>
+        <td>
+            <ol>
+                <li>
+                    we can launch a certain numbers of musicians
+                </li>
+                <li>
+                    then launch one auditor
+                </li>
+                <li>
+                    we check through a TCP connection that everything seems alright: musicians are playing correctly, the auditor is listening correctly and the data updates are done correctly
+                </li>
+                <li>
+                    we can use the `validate.sh` script to do an ultimate check
+                </li>
+            </ol>
+        </td>
+    </tr>
+</table>
 
 ## Constraints
 
