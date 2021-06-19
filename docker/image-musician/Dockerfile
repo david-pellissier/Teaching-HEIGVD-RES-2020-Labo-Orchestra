@@ -6,5 +6,5 @@ COPY src /opt/app/
 
 RUN npm install
 
-# ENTRYPOINT ["node", "/opt/app/app.js"]
-ENTRYPOINT ["npm", "run", "piano"]
+ENTRYPOINT ["node", "/opt/app/app.js"]
+# ENTRYPOINT ["npm", "run", "piano"]
