@@ -150,7 +150,7 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 |Question | How can we use the `ENTRYPOINT` statement in our Dockerfile?  |
 | | In the same way of the `CMD` statement. The difference between those 2 is that one can not override the `ENTRYPOINT` instruction by adding command-line parameters to the `docker run` command.  |
 |Question | After building our Docker image, how do we use it to **run containers**?  |
-| | using `docker run [OPTIONS] <docker_image>`  |
+| | using `docker run [OPTIONS] <docker_image> <instrument>`  |
 |Question | How do we get the list of all **running containers**?  |
 | | using `docker ps`  |
 |Question | How do we **stop/kill** one running container?  |
